@@ -1,0 +1,12 @@
+@import "./../../node_modules/bootstrap/dist/css/bootstrap.css";
+@import "./../../node_modules/angular-bootstrap-datetimepicker/src/css/datetimepicker.css";
+@import "./config.scss";
+
+/* 全局配置 */
+.w1200 {max-width: 1200px;}
+
+.bg-book {background-color: $color-book;}
+
+.p-10 {padding: 10px;}
+
+.m-0-auto {margin: 0 auto;}

@@ -1,0 +1,13 @@
+<div class="select-box bounceInDown animated">
+    <div class="select-title">---请选择---</div>
+    <ul class="select-ul">
+        <li ng-repeat="item in $ctrl.config track by $index">
+            <label ng-click="$ctrl.selectItem(item, $event, $index)">
+                <!-- <span class="iconfont" ng-class="{'': }"></span>  -->
+                <input type="radio" name="select" value="item.checked" />
+                <span ng-bind="item.name"></span>
+            </label>
+        </li>
+    </ul>
+</div>
+<div class="select-masklayer"></div>
