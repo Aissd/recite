@@ -2,16 +2,18 @@ import angular from 'angular';
 
 // 页面功能组件
 import selectComponent from './@selectComponent/selectComponent';
+import uiSwitch from './@uiSwitch/uiSwitch';
 
 // 页面路由组件
-import wordModal from '../components-router/wordModal/wordModal';
-import descriptionModal from '../components-router/descriptionModal/descriptionModal';
+import loading from '../components-router/loading/loading';
+import wordList from '../components-router/wordList/wordList';
+import configuration from '../components-router/configuration/configuration';
 
 // 注入模块
 export default angular.module('app.components', [
     // 功能
-    selectComponent,
+    selectComponent, uiSwitch, 
     // 路由
-    wordModal, descriptionModal
+    loading, wordList, configuration
 ])
 .name;

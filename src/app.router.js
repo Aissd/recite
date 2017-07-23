@@ -1,25 +1,26 @@
 routing.$inject = ['$stateProvider', '$urlRouterProvider', '$httpProvider', '$locationProvider', '$compileProvider'];
 export default function routing($stateProvider, $urlRouterProvider, $httpProvider, $locationProvider, $compileProvider) {
 
-    $urlRouterProvider.otherwise('wordModal');
+    $urlRouterProvider.otherwise('loading');
 
     $stateProvider
         // loading
         .state('loading', {
             url: '/loading',
+            template: '<loading></loading>',
             title: 'loading'
         })
-        // wordModal
-        .state('wordModal', {
-            url: '/wordModal',
-            template: '<word-modal></word-modal>',
-            title: 'wordModal'
+        // wordList
+        .state('wordList', {
+            url: '/wordList/:accountName',
+            template: '<word-list></word-list>',
+            title: 'wordList'
         })
-        // descriptionModal
-        .state('descriptionModal', {
-            url: '/descriptionModal',
-            template: '<description-modal></description-modal>',
-            title: 'descriptionModal'
+        // configuration
+        .state('configuration', {
+            url: '/configuration',
+            template: '<configuration></configuration>',
+            title: 'configuration'
         })
         ;
 

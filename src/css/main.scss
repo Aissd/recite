@@ -7,6 +7,37 @@
 
 .bg-book {background-color: $color-book;}
 
+.c-5 {color: $color-5}
+.c-book {color: $color-book;}
+
 .p-10 {padding: 10px;}
 
 .m-0-auto {margin: 0 auto;}
+
+/* 动画 */
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both
+}
+.animated.infinite {
+    animation-iteration-count: infinite
+}
+.animated.hinge {
+    animation-duration: 2s
+}
+.animated.bounceIn,.animated.bounceOut,.animated.flipOutX,.animated.flipOutY {
+    animation-duration: .75s
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+.fadeIn {
+    animation-name: fadeIn
+}

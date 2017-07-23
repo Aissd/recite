@@ -1,0 +1,73 @@
+@import './../../css/config.scss';
+
+$color-open: #64bd63;
+$color-close: #ccc;
+
+/*表单开关样式*/
+.ui-switch {
+    position: relative;
+    font-size: 16px;
+    width: 70px;
+    height: 26px;
+    margin-bottom: 0;
+    input[type="checkbox"] {
+        width: 70px;
+        height: 26px;
+        position: absolute;
+        top: 8px;
+        left: 0;
+        z-index: 2;
+        border: 0;
+        background: 0 0;
+        -webkit-appearance: none;
+        outline: 0;
+        margin-top: 0;
+    }
+    input[type="checkbox"]:before {
+        content: '';
+        width: 58px;
+        height: 24px;
+        border: 1px solid #dfdfdf;
+        background-color: $color-close;
+        border-radius: 20px;
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        vertical-align: middle;
+        box-sizing: content-box;
+        border-color: #dfdfdf;
+        box-shadow: #dfdfdf 0 0 0 0 inset;
+        transition: border .4s, box-shadow .4s;
+        background-clip: content-box;
+    }
+    input[type="checkbox"]:checked:before {
+        border-color: $color-open;
+        box-shadow: $color-open 0 0 0 0.16rem inset;
+        background-color: $color-open;
+        transition: border .4s, box-shadow .4s, background-color 1.2s;
+        background-color: $color-open;
+    }
+    input[type="checkbox"]:checked:after {
+        left: 40px;
+    }
+    input[type="checkbox"]:after {
+        content: '';
+        width: 20px;;
+        height: 20px;
+        position: absolute;
+        top: 13px;
+        left: 3px;
+        transform: translateY(-50%);
+        border-radius: 100%;
+        background-color: #fff;
+        box-shadow: 0 0.01rem 0.03rem rgba(0, 0, 0, .4);
+        transition: left .2s;
+    }
+    input[type="checkbox"]:focus {
+        outline: none;
+    }
+}
+
+.ui-switch:focus {
+    outline: none;
+}

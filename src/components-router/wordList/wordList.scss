@@ -1,5 +1,8 @@
 @import './../../css/config.scss';
 .word-modal {
+    .row:not(:last-child) {
+        border-bottom: 1px dashed $color-C;
+    }
     .col-lg-8 {
         border-left: 1px solid $color-C;
         border-right: 1px solid $color-C;

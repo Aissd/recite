@@ -1,13 +1,8 @@
-{
-    "user": "zys",
-    "list": [
-        {
-            "word": "",
-            "description": "",
-            "type": "",
-            "chinese": "",
-            "display": "",
-            "picture": ""
-        }
-    ]
-}
+[
+    {
+        "word": "performance",
+        "description": "Someone's or something's performance is how successful they are or how well they do something.",
+        "type": "n",
+        "picture": ""
+    }
+]

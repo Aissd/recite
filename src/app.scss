@@ -17,3 +17,10 @@ li {
 table {
     table-layout: fixed;
 }
+
+
+.vertical {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
