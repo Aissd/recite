@@ -4,5 +4,65 @@
         "description": "Someone's or something's performance is how successful they are or how well they do something.",
         "type": "n",
         "picture": ""
+    },
+    {
+        "word": "brittle",
+        "description": "An object or substance that is brittle is hard but easily broken.",
+        "type": "adj",
+        "picture": ""
+    },
+    {
+        "word": "precedence",
+        "description": "If one thing takes precedence over another, it is regarded as more important than the other thing.",
+        "type": "n",
+        "picture": ""
+    },
+    {
+        "word": "precedence",
+        "description": "If one thing takes precedence over another, it is regarded as more important than the other thing.",
+        "type": "n",
+        "picture": ""
+    },
+    {
+        "word": "compile",
+        "description": "When you compile something such as a report, book, or programme, you produce it by collecting and putting together many pieces of information.",
+        "type": "vt",
+        "picture": ""
+    },
+    {
+        "word": "prefix",
+        "description": "A prefix is a letter or group of letters, for example, 'un- or multi-, that is added to the beginning of a word in order to form a different word.",
+        "type": "n",
+        "picture": ""
+    },
+    {
+        "word": "uglify",
+        "description": "to make or become ugly or more ugly.",
+        "type": "vt",
+        "picture": ""
+    },
+    {
+        "word": "compilation",
+        "description": "A compilation is a book, CD, or programme that contains many different items that have been gathered together, usually ones which have already appeared in other places.",
+        "type": "n",
+        "picture": ""
+    },
+    {
+        "word": "flexible",
+        "description": "Something or someone that is flexible is able to change easily and adapt to different conditions and circumstances as they occur.",
+        "type": "adj",
+        "picture": ""
+    },
+    {
+        "word": "chunk",
+        "description": "A chunk of something is a large amount or large part of it.",
+        "type": "n",
+        "picture": ""
+    },
+    {
+        "word": "optimize",
+        "description": "To optimize a plan, system, or machine means to arrange or design it so that it operates as smoothly and efficiently as possible.",
+        "type": "vi",
+        "picture": ""
     }
 ]
