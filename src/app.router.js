@@ -16,6 +16,12 @@ export default function routing($stateProvider, $urlRouterProvider, $httpProvide
             template: '<word-list></word-list>',
             title: 'wordList'
         })
+        // wordDetail
+        .state('wordDetail', {
+            url: '/wordDetail/:accountName',
+            template: '<word-detail></word-detail>',
+            title: 'wordDetail'
+        })
         // configuration
         .state('configuration', {
             url: '/configuration',

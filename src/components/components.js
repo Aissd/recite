@@ -9,6 +9,7 @@ import searchInput from './searchInput/searchInput';
 // 页面路由组件
 import loading from '../components-router/loading/loading';
 import wordList from '../components-router/wordList/wordList';
+import wordDetail from '../components-router/wordDetail/wordDetail';
 import configuration from '../components-router/configuration/configuration';
 
 // 注入模块
@@ -16,6 +17,6 @@ export default angular.module('app.components', [
     // 功能
     selectComponent, uiSwitch, searchInput,
     // 路由
-    loading, wordList, configuration
+    loading, wordList, wordDetail, configuration
 ])
 .name;

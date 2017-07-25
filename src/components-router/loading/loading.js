@@ -3,13 +3,12 @@ import template from './loading.html';
 import './loading.scss';
 
 class loadingController {
-    constructor($state, $stateParams, $timeout) {
+    constructor($state, $timeout) {
         this.$state = $state;
-        this.$stateParams = $stateParams;
         this.$timeout = $timeout;
         this.$onInit = () => {
             this.$timeout(()=>{
-                this.$state.go('wordList', {accountName: $stateParams.accountName});
+                this.$state.go('wordDetail');
             }, 1500);
         };
     }
@@ -18,6 +17,6 @@ class loadingController {
 export default angular.module('app.loading', [])
     .component('loading', {
         template: template,
-        controller: ['$state', '$stateParams', '$timeout', loadingController]
+        controller: ['$state', '$timeout', loadingController]
     })
     .name;

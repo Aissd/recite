@@ -15,8 +15,20 @@ class wordListController {
                 alert('哪有你的文件');
                 this.dataList = require('./../../json/zys.json');
             }
-            console.log(this.dataList);
+            this.currentWord = this.getRadomWord();
+            console.log(this.currentWord);
         };
+    }
+
+    // 从单词数组里随机取一元素
+    getRadomWord() {
+        let random = Math.floor(Math.random() * this.dataList.length + 1) - 1;
+        if(this.dataList[random].finished) {
+            this.getRadomWord();
+        } else {
+            this.dataList[random].finished = true;
+            return this.dataList[random];
+        }
     }
 
     // 控制显示

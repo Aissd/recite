@@ -3,7 +3,7 @@
 @import "./config.scss";
 
 /* 全局配置 */
-.w1200 {max-width: 1200px;}
+.w640 {max-width: 640px;}
 
 .bg-book {background-color: $color-book;}
 
@@ -11,6 +11,7 @@
 .c-book {color: $color-book;}
 
 .p-10 {padding: 10px;}
+.p-12 {padding: 12px;}
 
 .m-0-auto {margin: 0 auto;}
 

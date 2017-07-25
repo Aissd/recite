@@ -1,0 +1,35 @@
+@import './../../css/config.scss';
+
+.word-detail {
+    .word-title {
+        text-align: center;
+        margin: 20px 0;
+    }
+    .btn-group {
+        padding: 20px 10px;
+        width: 100%;
+        .btn {
+            width: 100px;
+        }
+        .btn:first-child {
+            float: left;
+            border-top-right-radius: 4px !important;
+            border-bottom-right-radius: 4px !important;
+        }
+        .btn:last-child {
+            float: right;
+            border-top-left-radius: 4px !important;
+            border-bottom-left-radius: 4px !important;
+        }
+    }
+    .btn-bar {
+        padding: 20px 10px;
+        text-align: center;
+        .btn {
+            width: 200px;
+        }
+    }
+    .word-description {
+        
+    }
+}
