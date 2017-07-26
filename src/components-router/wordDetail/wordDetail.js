@@ -3,11 +3,11 @@ import template from './wordDetail.html';
 import './wordDetail.scss';
 
 class wordDetailController {
-    constructor() {
+    constructor($timeout) {
+        this.$timeout = $timeout;
         this.$onInit = () => {
             this.dataList = require('./../../json/zys.json');
-            this.currentWord = this.getRadomWord();
-            console.log(this.currentWord);
+            this.getNext();
         };
     }
 
@@ -16,31 +16,27 @@ class wordDetailController {
         this.currentWord = this.getRadomWord();
     }
 
-    // 看答案
+    // 显示答案，显示下一个按钮
     getAnswer() {
         this.currentWord.display = true;
     }
 
     // 从单词数组里随机取一元素
     getRadomWord() {
-        let random = Math.floor(Math.random() * this.dataList.length + 1) - 1;
-        if(this.dataList[random].finished) {
-            this.getNext();
+        if(this.dataList.length !== 0) {
+            let random = Math.floor(Math.random() * this.dataList.length + 1) - 1;
+            let word = this.dataList[random];
+            this.dataList.splice(random, 1);
+            return word;
         } else {
-            this.dataList[random].finished = true;
-            return this.dataList[random];
+            return null;
         }
-    }
-
-    // 控制显示
-    handleDisplay() {
-        this.display = !this.display;
     }
 }
 
 export default angular.module('app.wordDetail', [])
     .component('wordDetail', {
         template: template,
-        controller: [wordDetailController]
+        controller: ['$timeout', wordDetailController]
     })
     .name;
