@@ -9,7 +9,7 @@ class loadingController {
         this.$onInit = () => {
             this.$timeout(()=>{
                 this.$state.go('wordDetail');
-            }, 1500);
+            }, 2000);
         };
     }
 }

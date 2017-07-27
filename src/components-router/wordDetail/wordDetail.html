@@ -1,19 +1,24 @@
 <div class="word-detail">
-    <!-- 单词  -->
-    <h3 class="word-title" ng-bind="$ctrl.currentWord.word"></h3>
-    <!-- 按钮组  -->
-    <div class="btn-group clearfix" ng-if="!$ctrl.currentWord.display">
-        <button type="button" class="btn btn-success" ng-click="$ctrl.getNext()">记得</button>
-        <button type="button" class="btn btn-danger" ng-click="$ctrl.getAnswer()">不记得</button>
+    <!-- 背单词  -->
+    <div ng-if="$ctrl.currentWord">
+        <!-- 单词  -->
+        <h3 class="word-title" ng-bind="$ctrl.currentWord.word"></h3>
+        <!-- 按钮组  -->
+        <div class="btn-group clearfix" ng-if="!$ctrl.currentWord.display">
+            <button type="button" class="btn btn-success" ng-click="$ctrl.getNext()">记得</button>
+            <button type="button" class="btn btn-danger" ng-click="$ctrl.getAnswer()">不记得</button>
+        </div>
+        <!-- 英文解释  -->
+        <div class="word-description animated" 
+            ng-class="{'c-book': !$ctrl.currentWord.display, 'c-5 fadeIn': $ctrl.currentWord.display}">
+            <span ng-bind="$ctrl.currentWord.type + '. '"></span>
+            <span ng-bind="$ctrl.currentWord.description"></span>
+        </div>
+        <!-- 下一个  -->
+        <div class="btn-bar" ng-if="$ctrl.currentWord.display">
+            <button class="btn btn-success" ng-click="$ctrl.getNext()">下一个</button>
+        </div>
     </div>
-    <!-- 英文解释  -->
-    <div class="word-description animated" 
-        ng-class="{'c-book': !$ctrl.currentWord.display, 'c-5 fadeIn': $ctrl.currentWord.display}">
-        <span ng-bind="$ctrl.currentWord.type + '. '"></span>
-        <span ng-bind="$ctrl.currentWord.description"></span>
-    </div>
-    <!-- 下一个  -->
-    <div class="btn-bar" ng-if="$ctrl.currentWord.display">
-        <button class="btn btn-success" ng-click="$ctrl.getNext()">下一个</button>
-    </div>
+    <!-- 背完单词提示  -->
+    <h3 class="text-center" ng-if="!$ctrl.currentWord">厉害，竟然全部复习完了</h3>
 </div>
