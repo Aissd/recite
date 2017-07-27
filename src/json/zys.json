@@ -1,68 +1,98 @@
 [
     {
-        "word": "performance",
+        "english": "performance",
         "description": "Someone's or something's performance is how successful they are or how well they do something.",
         "type": "n",
-        "picture": ""
+        "picture": "",
+        "chinese": "性能",
+        "phonetic": "美 [pɚ'fɔrməns]"
     },
     {
-        "word": "brittle",
+        "english": "brittle",
         "description": "An object or substance that is brittle is hard but easily broken.",
         "type": "adj",
-        "picture": ""
+        "picture": "",
+        "chinese": "易碎的，脆弱的；",
+        "phonetic": "美 ['brɪtl]"
     },
     {
-        "word": "precedence",
+        "english": "precedence",
         "description": "If one thing takes precedence over another, it is regarded as more important than the other thing.",
         "type": "n",
-        "picture": ""
+        "picture": "",
+        "chinese": "优先",
+        "phonetic": "美 [prɪ'sidəns]"
     },
     {
-        "word": "precedence",
-        "description": "If one thing takes precedence over another, it is regarded as more important than the other thing.",
-        "type": "n",
-        "picture": ""
-    },
-    {
-        "word": "compile",
+        "english": "compile",
         "description": "When you compile something such as a report, book, or programme, you produce it by collecting and putting together many pieces of information.",
         "type": "vt",
-        "picture": ""
+        "picture": "",
+        "chinese": "编译",
+        "phonetic": "美 [kəm'paɪl]"
     },
     {
-        "word": "prefix",
+        "english": "prefix",
         "description": "A prefix is a letter or group of letters, for example, 'un- or multi-, that is added to the beginning of a word in order to form a different word.",
         "type": "n",
-        "picture": ""
+        "picture": "",
+        "chinese": "前缀",
+        "phonetic": "美 ['prifɪks]"
     },
     {
-        "word": "uglify",
+        "english": "uglify",
         "description": "to make or become ugly or more ugly.",
         "type": "vt",
-        "picture": ""
+        "picture": "",
+        "chinese": "把…弄成难看；将…丑化；",
+        "phonetic": "美 ['ʌglɪ,fai]"
     },
     {
-        "word": "compilation",
+        "english": "compilation",
         "description": "A compilation is a book, CD, or programme that contains many different items that have been gathered together, usually ones which have already appeared in other places.",
         "type": "n",
-        "picture": ""
+        "picture": "",
+        "chinese": "编译",
+        "phonetic": "美 [,kɑmpɪ'leʃən]"
     },
     {
-        "word": "flexible",
+        "english": "flexible",
         "description": "Something or someone that is flexible is able to change easily and adapt to different conditions and circumstances as they occur.",
         "type": "adj",
-        "picture": ""
+        "picture": "",
+        "chinese": "灵活的",
+        "phonetic": "美 ['flɛksəbl]"
     },
     {
-        "word": "chunk",
+        "english": "chunk",
         "description": "A chunk of something is a large amount or large part of it.",
         "type": "n",
-        "picture": ""
+        "picture": "",
+        "chinese": "大块",
+        "phonetic": "美 [tʃʌŋk]"
     },
     {
-        "word": "optimize",
+        "english": "optimize",
         "description": "To optimize a plan, system, or machine means to arrange or design it so that it operates as smoothly and efficiently as possible.",
         "type": "vi",
-        "picture": ""
+        "picture": "",
+        "chinese": "优化",
+        "phonetic": "美 ['ɑptɪmaɪz]"
+    },
+    {
+        "english": "fatal",
+        "description": "A fatal action has very undesirable effects.",
+        "type": "adj",
+        "picture": "",
+        "chinese": "重大的；",
+        "phonetic": "美 ['fetl]"
+    },
+    {
+        "english": "stash",
+        "description": "If you stash something valuable in a secret place, you store it there to keep it safe.",
+        "type": "vi",
+        "picture": "",
+        "chinese": "存放",
+        "phonetic": "美 [stæʃ]"
     }
 ]
