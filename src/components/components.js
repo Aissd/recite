@@ -10,13 +10,13 @@ import searchInput from './searchInput/searchInput';
 import loading from '../components-router/loading/loading';
 import wordList from '../components-router/wordList/wordList';
 import wordDetail from '../components-router/wordDetail/wordDetail';
-import configuration from '../components-router/configuration/configuration';
+import wordManage from '../components-router/wordManage/wordManage';
 
 // 注入模块
 export default angular.module('app.components', [
     // 功能
     selectComponent, uiSwitch, searchInput,
     // 路由
-    loading, wordList, wordDetail, configuration
+    loading, wordList, wordDetail, wordManage
 ])
 .name;
