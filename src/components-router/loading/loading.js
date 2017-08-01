@@ -12,15 +12,17 @@ class loadingController {
     }
 
     loadingInitFn() {
+        let url = '';
         if(this.IsPC()) {
-            this.$timeout(()=>{
-                this.$state.go('wordManage');
-            }, 2000);
+            // PC端走管理
+            url = 'wordManage';
         } else {
-            this.$timeout(()=>{
-                this.$state.go('wordDetail');
-            }, 2000);
+            // 移动端走详情页
+            url = 'wordDetail';
         }
+        this.$timeout(()=>{
+            this.$state.go(url);
+        }, 2000);
     }
     
     // 判断客户端是否为PC

@@ -1,7 +1,42 @@
 <div class="container-fluid">
     <h1>Hello word</h1>
     <form>
-        <button type="submit" class="btn btn-success">单词 - 英文解释模式</button>
-        <button type="submit" class="btn btn-success">英文解释 - 单词模式</button>
+        <div class="form-group">
+            <label for="english">English</label>
+            <input type="text" class="form-control" id="english" placeholder="english" />
+        </div>
+        <div class="form-group">
+            <label for="phonetic">Phonetic</label>
+            <input type="text" class="form-control" id="phonetic" placeholder="phonetic" />
+        </div>
+        <div class="form-group">
+            <label for="chinese">Chinese</label>
+            <input type="text" class="form-control" id="chinese" placeholder="chinese" />
+        </div>
+        <label class="radio-inline">
+            <input type="radio" name="type" id="n" value="n" />
+            <span>n</span>
+        </label>
+        <label class="radio-inline">
+            <input type="radio" name="type" id="vt" value="vt" />
+            <span>vt</span>
+        </label>
+        <label class="radio-inline">
+            <input type="radio" name="type" id="vi" value="vi" />
+            <span>vi</span>
+        </label>
+        <label class="radio-inline">
+            <input type="radio" name="type" id="adj" value="adj" />
+            <span>adj</span>
+        </label>
+        <label class="radio-inline">
+            <input type="radio" name="type" id="adv" value="adv" />
+            <span>adv</span>
+        </label>
+        <label class="radio-inline">
+            <input type="radio" name="type" id="prep" value="prep" />
+            <span>prep</span>
+        </label>
+        <button type="button" class="btn btn-default">Submit</button>
     </form>
 </div>
