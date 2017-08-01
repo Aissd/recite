@@ -23,10 +23,10 @@ export default function routing($stateProvider, $urlRouterProvider, $httpProvide
             title: 'wordDetail'
         })
         // configuration
-        .state('configuration', {
-            url: '/configuration',
-            template: '<configuration></configuration>',
-            title: 'configuration'
+        .state('wordManage', {
+            url: '/wordManage',
+            template: '<word-manage></word-manage>',
+            title: 'wordManage'
         })
         ;
 

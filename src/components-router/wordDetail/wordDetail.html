@@ -2,7 +2,10 @@
     <!-- 背单词  -->
     <div ng-if="$ctrl.currentWord">
         <!-- 单词  -->
-        <h3 class="word-title" ng-bind="$ctrl.currentWord.word"></h3>
+        <div class="animated" ng-class="{'fadeInDown': $ctrl.fade, 'fadeOutDown': !$ctrl.fade}">
+            <h3 class="word-title" ng-bind="$ctrl.currentWord.english"></h3>
+            <h5 class="word-phonetic" ng-bind="$ctrl.currentWord.phonetic"></h5>
+        </div>
         <!-- 按钮组  -->
         <div class="btn-group clearfix" ng-if="!$ctrl.currentWord.display">
             <button type="button" class="btn btn-success" ng-click="$ctrl.getNext()">记得</button>

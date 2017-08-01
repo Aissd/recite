@@ -13,7 +13,9 @@ class wordDetailController {
 
     // 取下一个单词
     getNext() {
+        this.fade = false;
         this.currentWord = this.getRadomWord();
+        this.fade = true;
     }
 
     // 显示答案，显示下一个按钮
