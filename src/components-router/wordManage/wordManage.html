@@ -4,16 +4,14 @@
         <!-- 输入框  -->
         <div class="form-group" ng-repeat="input in $ctrl.config.inputList track by $index">
             <label for="{{input.id}}" ng-bind="input.title"></label>
-            <input type="text" class="form-control" id="{{input.id}}" placeholder="{{input.placeholder}}" />
+            <input type="text" class="form-control" id="{{input.id}}" ng-model="$ctrl.dataObj[input.value]" placeholder="{{input.placeholder}}" />
         </div>
         <!-- 单选框  -->
         <label class="radio-inline" ng-repeat="radio in $ctrl.config.radioList track by $index">
-            <input type="radio" name="type" value="{{radio.id}}" ng-model="radio" />
-            <span class="iconfont icon-tick" ng-if="radio.checked"></span>
+            <input type="radio" name="type" value="{{radio.id}}" ng-model="$ctrl.dataObj.type" />
+            <span class="iconfont icon-tick" ng-if="$ctrl.dataObj.type == radio.type"></span>
             <span ng-bind="radio.type"></span>
         </label>
-        <button type="button" class="btn btn-default">Submit</button>
+        <button type="button" class="btn btn-default" ng-click="$ctrl.submit()">Submit</button>
     </form>
 </div>
-
-==={{$ctrl.config}}

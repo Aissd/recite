@@ -11,6 +11,17 @@ class wordManageController {
 
     wordManageInit() {
         this.config = require('./config.json');
+        this.dataObj = {
+            type: this.config.radioList[0].type
+        };
+        for(let a = 0, alen = this.config.inputList.length; a < alen; a++) {
+            this.dataObj[this.config.inputList[a].value] = '';
+        }
+        console.log(this.dataObj);
+    }
+
+    submit(){
+        console.log(this.dataObj);
     }
 }
 

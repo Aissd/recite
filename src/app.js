@@ -39,18 +39,18 @@ let appComponent = {
 appComponent.$inject = ['$rootScope', '$state', '$stateParams'];
 
 //app.run
-let appRun = ['$rootScope', function ($rootScope) {
-    console.log($rootScope);
-    $rootScope.$on('$stateChangeStart', function (event, toState) {
-        console.log(event);
-        console.log(toState);
-    });
-}];
+// let appRun = ['$rootScope', function ($rootScope) {
+//     console.log($rootScope);
+//     $rootScope.$on('$stateChangeStart', function (event, toState) {
+//         console.log(event);
+//         console.log(toState);
+//     });
+// }];
 
 
 export default angular.module('app', [uiRouter, components])
     //初始化设置
-    .run(appRun)
+    // .run(appRun)
     //页面路由
     .config(appRouter)
     //页面模板

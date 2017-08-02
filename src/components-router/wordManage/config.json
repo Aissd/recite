@@ -39,13 +39,6 @@
             "placeholder": ""
         },
         {
-            "id": "password",
-            "title": "password",
-            "type": "password",
-            "value": "password",
-            "placeholder": ""
-        },
-        {
             "id": "phonetic",
             "title": "Phonetic",
             "value": "phonetic",
