@@ -1,0 +1,17 @@
+@import './../../css/config.scss';
+.radio-inline {
+    width: 80px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 6px;
+    position: relative;
+    input[type="radio"] {
+        display: none;
+    }
+    .icon-tick {
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        color: #5cb85c;
+    }
+}

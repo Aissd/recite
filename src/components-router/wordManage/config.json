@@ -1,0 +1,61 @@
+{
+    "radioList": [
+        {
+            "id": "n",
+            "type": "n",
+            "value": "n"
+        },
+        {
+            "id": "vt",
+            "type": "vt",
+            "value": "vt"
+        },
+        {
+            "id": "vi",
+            "type": "vi",
+            "value": "vi"
+        },
+        {
+            "id": "adj",
+            "type": "adj",
+            "value": "adj"
+        },
+        {
+            "id": "adv",
+            "type": "adv",
+            "value": "adv"
+        },
+        {
+            "id": "prep",
+            "type": "prep",
+            "value": "prep"
+        }
+    ],
+    "inputList": [
+        {
+            "id": "english",
+            "title": "English",
+            "value": "english",
+            "placeholder": ""
+        },
+        {
+            "id": "password",
+            "title": "password",
+            "type": "password",
+            "value": "password",
+            "placeholder": ""
+        },
+        {
+            "id": "phonetic",
+            "title": "Phonetic",
+            "value": "phonetic",
+            "placeholder": ""
+        },
+        {
+            "id": "chinese",
+            "title": "Chinese",
+            "value": "chinese",
+            "placeholder": ""
+        }
+    ]
+}

@@ -5,8 +5,12 @@ import './wordManage.scss';
 class wordManageController {
     constructor() {
         this.$onInit = () => {
-            
+            this.wordManageInit();
         };
+    }
+
+    wordManageInit() {
+        this.config = require('./config.json');
     }
 }
 
