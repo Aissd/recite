@@ -1,17 +1,27 @@
 <div class="container-fluid">
-    <h1>Hello word</h1>
+    <h1 class="text-center">Hello word</h1>
     <form>
         <!-- 输入框  -->
         <div class="form-group" ng-repeat="input in $ctrl.config.inputList track by $index">
             <label for="{{input.id}}" ng-bind="input.title"></label>
-            <input type="text" class="form-control" id="{{input.id}}" ng-model="$ctrl.dataObj[input.value]" placeholder="{{input.placeholder}}" />
+            <input type="text" class="form-control" id="{{input.id}}" value="input" ng-model="$ctrl.dataObj[input.value]" placeholder="{{input.placeholder}}" />
+        </div>
+        <!-- 文本域  -->
+        <div class="form-group">
+            <label class="disblock" for="description">Description</label>
+            <textarea id="description" class="form-control" ng-model="$ctrl.dataObj.description"></textarea>
         </div>
         <!-- 单选框  -->
-        <label class="radio-inline" ng-repeat="radio in $ctrl.config.radioList track by $index">
-            <input type="radio" name="type" value="{{radio.id}}" ng-model="$ctrl.dataObj.type" />
-            <span class="iconfont icon-tick" ng-if="$ctrl.dataObj.type == radio.type"></span>
-            <span ng-bind="radio.type"></span>
-        </label>
-        <button type="button" class="btn btn-default" ng-click="$ctrl.submit()">Submit</button>
+        <div class="form-group">
+            <label class="disblock">Type</label>
+            <label class="radio-inline" ng-repeat="radio in $ctrl.config.radioList track by $index">
+                <input type="radio" name="type" value="{{radio}}" ng-model="$ctrl.dataObj.type" />
+                <span class="iconfont icon-tick" ng-if="$ctrl.dataObj.type == radio.type"></span>
+                <span ng-bind="radio.type"></span>
+            </label>
+        </div>
+        <div class="form-group">
+            <button type="button" class="btn btn-success" ng-click="$ctrl.submit()">Console</button>
+        </div>
     </form>
 </div>

@@ -22,6 +22,19 @@ class wordManageController {
 
     submit(){
         console.log(this.dataObj);
+        this.res = '';
+        this.res += 
+        `
+        {
+            "english": \"+this.dataObj+\",
+            "description": "",
+            "type": "",
+            "picture": "",
+            "chinese": "",
+            "phonetic": "",
+        }
+        `;
+        console.log(this.res);
     }
 }
 
