@@ -17,24 +17,22 @@ class wordManageController {
         for(let a = 0, alen = this.config.inputList.length; a < alen; a++) {
             this.dataObj[this.config.inputList[a].value] = '';
         }
-        console.log(this.dataObj);
     }
 
     submit(){
-        console.log(this.dataObj);
         this.res = '';
         this.res += 
         `
         {
-            "english": \"+this.dataObj+\",
-            "description": "",
-            "type": "",
+            "english": \"${this.dataObj.english}\",
+            "description": \"${this.dataObj.description}\",
+            "type": \"${this.dataObj.type}\",
             "picture": "",
-            "chinese": "",
-            "phonetic": "",
+            "chinese": \"${this.dataObj.chinese}\",
+            "phonetic": \"${this.dataObj.phonetic}\"
         }
         `;
-        console.log(this.res);
+        this.wordManageInit();
     }
 }
 

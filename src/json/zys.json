@@ -94,5 +94,37 @@
         "picture": "",
         "chinese": "存放",
         "phonetic": "美 [stæʃ]"
+    },
+    {
+        "english": "domain",
+        "description": "On the Internet, a domain is a set of addresses that shows, for example, the category or geographical area that an Internet address belongs to.",
+        "type": "n",
+        "picture": "",
+        "chinese": "域名",
+        "phonetic": "美 [do'men]"
+    },
+    {
+        "english": "unexpected",
+        "description": "If an event or someone's behaviour is unexpected, it surprises you because you did not think that it was likely to happen.",
+        "type": "adj",
+        "picture": "",
+        "chinese": "意外的",
+        "phonetic": "美 ['ʌnɪk'spɛktɪd]"
+    },
+    {
+        "english": "fetch",
+        "description": "If you fetch something or someone, you go and get them from the place where they are.",
+        "type": "vt",
+        "picture": "",
+        "chinese": "取来",
+        "phonetic": "美 [fɛtʃ]"
+    },
+    {
+        "english": "devastate",
+        "description": "If something devastates an area or a place, it damages it very badly or destroys it totally.",
+        "type": "vt",
+        "picture": "",
+        "chinese": "毁坏",
+        "phonetic": "美 ['dɛvəstet]"
     }
 ]

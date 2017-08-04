@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="word-manage">
     <h1 class="text-center">Hello word</h1>
     <form>
         <!-- 输入框  -->
@@ -15,13 +15,14 @@
         <div class="form-group">
             <label class="disblock">Type</label>
             <label class="radio-inline" ng-repeat="radio in $ctrl.config.radioList track by $index">
-                <input type="radio" name="type" value="{{radio}}" ng-model="$ctrl.dataObj.type" />
+                <input type="radio" name="type" value="{{radio.type}}" ng-model="$ctrl.dataObj.type" />
                 <span class="iconfont icon-tick" ng-if="$ctrl.dataObj.type == radio.type"></span>
                 <span ng-bind="radio.type"></span>
             </label>
         </div>
         <div class="form-group">
-            <button type="button" class="btn btn-success" ng-click="$ctrl.submit()">Console</button>
+            <button type="button" class="btn btn-block btn-lg btn-success" ng-click="$ctrl.submit()">Console</button>
         </div>
     </form>
+    <div ng-bind="$ctrl.res"></div>
 </div>

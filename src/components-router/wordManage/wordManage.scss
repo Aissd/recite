@@ -1,10 +1,17 @@
 @import './../../css/config.scss';
+.word-manage {
+    textarea {
+        resize: none;
+    }
+}
+
 .radio-inline {
     width: 80px;
     background-color: #fff;
     padding: 10px;
     border-radius: 6px;
     position: relative;
+    margin-bottom: 15px;
     input[type="radio"] {
         display: none;
     }
