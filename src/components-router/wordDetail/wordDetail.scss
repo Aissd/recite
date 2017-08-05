@@ -4,14 +4,17 @@
     .word-title {
         text-align: center;
         margin: 20px 0;
+        font-size: .28rem;
     }
     .word-phonetic {
         text-align: center;
         margin: 20px 0;
     }
     .btn-group {
-        padding: 20px 10px;
+        padding: 20px;
         width: 100%;
+        position: fixed;
+        bottom: 30px;
         .btn {
             width: 100px;
         }
@@ -29,11 +32,14 @@
     .btn-bar {
         padding: 20px 10px;
         text-align: center;
+        position: fixed;
+        bottom: 30px;
+        width: 100%;
         .btn {
             width: 200px;
         }
     }
     .word-description {
-        
+        padding: 12px;
     }
 }
